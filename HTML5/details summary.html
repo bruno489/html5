@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+	<head>
+
+		<title>HTML5 aula 18</title>
+		<base href="imagens/">
+		<script>
+	
+			function abrir(){
+
+				document.getElementById("caixa").setAttribute("open","");}
+			
+			
+			function fechar(){
+				document.getElementById("caixa").removeAttribute("open","");
+			}
+		</script>
+		
+		<style>
+			summary::-webkit-details-marker{
+					color:#f00;
+			}
+		
+			article{	background-color:#ddd;
+						border:1px solid #000;
+						border-radius:15px;
+						padding:20px;
+									}	
+			details article{	background-color:#846;
+						border:1px solid #000;
+						border-radius:15px;
+						padding:20px;
+									}		
+			details{background-color:#153;
+					display:inline;}	
+			details:hover{	background-color:#ccc;
+							}
+		</style>
+
+	</head>
+
+		
+	<body>
+	
+		<details id="caixa" onmouseover="abrir()" onmouseout="fechar()">
+			<summary>Cursos do nosso canal</summary>
+			<div>
+				<button type="button">churrasco</button>
+				<p>HTML5</p>
+				<p>CSS</P>
+				<P>JAVASCRIPT</P>
+				<P>C++</P>
+				<P>PHP</P>
+				<P>ARDUINO</P>
+			</div>
+		</details>
+		
+		<article>
+				<summary>Cursos do nosso canal</summary>
+				<p>HTML5</p>
+				<p>CSS</P>
+				<P>JAVASCRIPT</P>
+				<P>C++</P>
+				<P>PHP</P>
+				<P>ARDUINO</P>
+		</article>
+		
+		
+	</body>
+	
+	<!--
+		
+	-->
+
+</html>
